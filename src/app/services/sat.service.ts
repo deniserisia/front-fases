@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -13,15 +13,14 @@ export class SatService {
 
   generateSatInstance(n: number, m: number, k: number): Observable<any> {
     const requestData = { n, m, k };
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
     console.log('📤 Enviando dados para o backend:', requestData); // Debug
-
-    return this.http.post<any>(this.apiUrl, requestData);
+    return this.http.post<any>(this.apiUrl, requestData, { headers });
   }
-
-
+  
   getGraphData(): Observable<any> {
     console.log('📥 Buscando dados do gráfico do backend');
-    return this.http.get<any>(this.graphApiUrl);
-  
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this.http.get<any>(this.graphApiUrl, { headers });
   }
 }
