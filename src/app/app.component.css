@@ -1,0 +1,192 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    width: 100%;
+    height: 500px; /* Aumentado para mais espaço */
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    justify-content: flex-start; /* Alinha o conteúdo no topo */
+    align-items: center; /* Centraliza o conteúdo na horizontal */
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre o texto e a imagem */
+    margin-top: 45px;
+}
+
+.text-container {
+    max-width: 60%;
+}
+
+.title {
+    font-size: 2.3rem; /* Aumenta o tamanho do h1 */
+    margin-top: 40px; /* Move o h1 para baixo */
+}
+
+.bordered-image {
+    max-width: 35%;
+    margin-top: 55px;
+}
+
+.light-gray {
+    background-color: #d3d3d3; /* Cinza claro */
+}
+
+.dark-gray {
+    background-color: #a9a9a9; /* Cinza escuro */
+}
+
+
+
+.input-container {
+    display: flex; /* Permite que os campos de entrada fiquem lado a lado */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça uniformemente os grupos de entrada */
+    width: 100%; /* Largura total da seção */
+    max-width: 1200px; /* Limita a largura total do conteúdo */
+    margin-bottom: 20px; /* Espaço abaixo dos campos de entrada */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; 
+    margin-right: 20px; 
+}
+
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 80px; 
+}
+
+.input-section, .clauses-section, .chart-section {
+    flex: 1;
+}
+
+.input-section .card, .clauses-section .clauses-card, .chart-section .chart-container {
+    width: 100%;
+}
+
+.section-title-3 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.section-description-3 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.section-description {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.section-description-2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.input-custom {
+    width: 100%;
+    padding: 9px;
+    font-size: 13px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-custom:focus {
+    border-color: #007bff;
+}
+
+/* Melhor espaçamento dos cards dentro da input-section */
+.input-section .card {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Botão maior e estilizado */
+.btn-custom {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-custom-2 {
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+
+.btn-custom:hover {
+    background: #0056b3;
+}
+
+/* Estilização do gráfico */
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+canvas#myChart {
+    width: 350px !important; /* Redução da largura */
+    height: 220px !important; /* Redução da altura */
+}
+
+/* Estilização do card de instância gerada */
+.clauses-card {
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Personalização da barra de rolagem */
+.clauses-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+.clauses-card::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.clauses-card::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

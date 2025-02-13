@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+body, html {
+    margin: 0; /* Remove margens do body e html */
+    padding: 0; /* Remove padding do body e html */
+    height: 100%; /* Faz o body ocupar toda a altura da página */
+    font-family: "Nunito Sans", sans-serif;
+}
