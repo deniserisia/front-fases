@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SatService {
-  private apiUrl = 'http://127.0.0.1:5000/generate-sat/';
-  private graphApiUrl = 'http://127.0.0.1:5000/graph-data/'; 
+  private apiUrl = 'https://api-fases.vercel.app/generate-sat/';
+  private graphApiUrl = 'https://api-fases.vercel.app/graph-data/'; 
 
   constructor(private http: HttpClient) {}
 
